@@ -34,7 +34,14 @@ A seguir estão os cenários de teste implementados para cada funcionalidade:
 ### Criação de Usuário
 
 - Preenchimento bem-sucedido do formulário
-  - Descrição: Verifica se é possível preencher corretamente o formulário de criação de usuário e salvar as informações.
+  - Preencha todos os campos obrigatórios do formulário de criação de usuário com valores válidos e Verifique se o usuário é criado corretamente
+  - Arquivo de teste: `create-user.spec.js`
+- Teste de campo obrigatório
+  - Deixe um ou mais campos obrigatórios em branco, tente submeter o formulário e verifique se uma mensagem de erro adequada é exibida para cada campo obrigatório vazio
+  - Arquivo de teste: `create-user.spec.js`
+
+- Realizar cadastro com formato de senha inválido
+  - Preencher o campo senha com formata inválido e verifique se uma mensagem de erro adequada
   - Arquivo de teste: `create-user.spec.js`
 
 ### Login API
